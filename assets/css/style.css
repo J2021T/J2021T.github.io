@@ -4,8 +4,9 @@
     --p-blue: #04328c;
     --p-silver: #b0b7bc;
     --c-green: #007A33;
-    --black: #000000;
+    --c-gold: #ba9653;
     --car-blue: #7bafd4;
+    --car-navy: #13294b;
 }
 
 * {
@@ -15,8 +16,79 @@
 }
 
 body {
-    background-color: var(--p-blue);
-    color: var(--car-blue);
-    text-decoration: var(--p-silver);
+    background-color: var(--c-gold);
+    color: var(--c-green);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* header style starts */
+
+header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/boston-skyline.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Calibri;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    font-style: oblique;
+    color: white;
+    font-weight: bold;
+    font
+}
+
+header nav ul li a:hover {
+    background-color: var(--c-green);
+    border-radius: 20%;
+}
+
+/* hero style starts */
+
+.hero {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../images/boston-skyline.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+
+.hero .sub h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: right;
+    margin-top: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
