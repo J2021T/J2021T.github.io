@@ -1,0 +1,22 @@
+:root {
+    /* colors */
+    --p-red: #C60C30;
+    --p-blue: #04328c;
+    --p-silver: #b0b7bc;
+    --c-green: #007A33;
+    --black: #000000;
+    --car-blue: #7bafd4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--p-blue);
+    color: var(--car-blue);
+    text-decoration: var(--p-silver);
+    font-family: Arial, Helvetica, sans-serif;
+}
