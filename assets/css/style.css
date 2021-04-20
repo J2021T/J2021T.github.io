@@ -101,6 +101,10 @@ header nav ul li a:hover {
   .flex-row {
       display: flex;
   }
+
+  img {
+      max-width: 100%;
+  }
   /* meet me style start */
 
   .intro {
@@ -132,8 +136,9 @@ header nav ul li a:hover {
     margin: 40px;
 }
 
-.my-projects h2 {
-    font-size: 2vw;
+.my-projects, .why-me h2 {
+    font-size: 3vw;
+    color: var(--p-red);
     text-align: center;
     vertical-align: center;
     border-right: 5px solid var(--p-red);
@@ -141,31 +146,52 @@ header nav ul li a:hover {
 }
 
 .project-imgs {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    flex-basis: auto;
+    justify-content: space-between;
 }
 
-.primary img {
-    padding: 10px 40px;
-    border-radius: 50px;
-    flex-grow: 2;
-    width: 100%;
-    height: auto;
+.secondary img {
+    max-width: 48%;
+}
+
+.project-imgs > div {
+    flex: 1 0 48%;
+    margin: 10px;
+}
+
+.project-imgs:first-child {
+    flex: 0 1 100%;
 }
 
 .primary h3 {
     justify-content: center;
-    font-size: 1vw;
+    font-size: 3vw;
     font-weight: bold;
     color: var(--p-red);
 }
 
-.secondary img {
+/* projects style ends */
+
+/* why me style starts */
+
+.why-p {
+    font-size: 2vw;
     padding: 10px 40px;
-    border-radius: 50px;
-    flex-grow: 1;
-    width: 100%;
-    height: auto;
+}
+
+/* why me style ends */
+
+/* connect style starts */
+
+.connectors h2 {
+    font-size: 2vw;
+    color: var(--p-red);
+    text-align: center;
+    vertical-align: center;
+    padding: 40px;
+}
+
+.connectors, .flex-row {
+    justify-content: space-between;
 }
