@@ -2,11 +2,6 @@
     /* colors */
     --p-red: #C60C30;
     --p-blue: #04328c;
-    --p-silver: #b0b7bc;
-    --c-green: #007A33;
-    --c-gold: #ba9653;
-    --car-blue: #7bafd4;
-    --car-navy: #13294b;
 }
 
 * {
@@ -134,9 +129,10 @@ header nav ul li a:hover {
 
 .my-projects {
     margin: 40px;
+    flex-wrap: wrap;
 }
 
-.my-projects, .why-me h2 {
+.my-projects h2, .why-me h2, .connectors h2 {
     font-size: 3vw;
     color: var(--p-red);
     text-align: center;
@@ -151,26 +147,29 @@ header nav ul li a:hover {
     justify-content: space-between;
 }
 
-.secondary img {
-    max-width: 48%;
-}
-
 .project-imgs > div {
     flex: 1 0 48%;
-    margin: 10px;
+    padding-left: 40px;
 }
 
-.project-imgs:first-child {
+.primary:first-child {
     flex: 0 1 100%;
 }
 
 .primary h3 {
     justify-content: center;
-    font-size: 3vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--p-red);
+    text-align: none;
+}
+
+.secondary h3 {
+    justify-content: center;
+    font-size: 2vw;
     font-weight: bold;
     color: var(--p-red);
 }
-
 /* projects style ends */
 
 /* why me style starts */
@@ -184,14 +183,16 @@ header nav ul li a:hover {
 
 /* connect style starts */
 
-.connectors h2 {
+.connectors > div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.connectors h3 {
     font-size: 2vw;
     color: var(--p-red);
     text-align: center;
     vertical-align: center;
     padding: 40px;
-}
-
-.connectors, .flex-row {
-    justify-content: space-between;
 }
