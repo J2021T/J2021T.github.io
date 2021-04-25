@@ -7,4 +7,4 @@
 - Last is a section with links to my linkedin, email, and github profile.
 
 ## Deployed Page Screenshot
-![](../images/readme-screenshot.png)
+![Alt text](.assets/images/readme-screenshot.png)
