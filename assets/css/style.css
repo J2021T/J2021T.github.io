@@ -43,7 +43,6 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -100,6 +99,7 @@ header nav ul li a:hover {
   img {
       max-width: 100%;
   }
+
   /* meet me style start */
 
   .intro {
@@ -120,7 +120,8 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     line-height: 1.2;
     text-align: left;
-    font-size: 2vw;    
+    font-size: 40px;  
+    margin-left: 20px;  
 }
 
   /* meet me style end */
@@ -128,7 +129,7 @@ header nav ul li a:hover {
   /* projects style starts */
 
 .my-projects {
-    margin: 40px;
+    margin: 40px auto;
     flex-wrap: wrap;
 }
 
@@ -137,14 +138,15 @@ header nav ul li a:hover {
     color: var(--p-red);
     text-align: center;
     vertical-align: center;
-    border-right: 5px solid var(--p-red);
     padding: 40px;
+    margin-left: auto;
 }
 
 .project-imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-left: 5px solid var(--p-red);
 }
 
 .project-imgs > div {
@@ -156,27 +158,44 @@ header nav ul li a:hover {
     flex: 0 1 100%;
 }
 
+.primary a {
+    position: relative;
+    text-align: center;
+}
+
 .primary h3 {
-    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
     font-size: 2vw;
     font-weight: bold;
-    color: var(--p-red);
-    text-align: none;
+    color: white;
+    text-align: center;
+    background-color: rgba(4, 50, 140, 0.75);
+}
+
+.secondary a {
+    position: relative;
+    text-align: center;
 }
 
 .secondary h3 {
-    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
     font-size: 2vw;
     font-weight: bold;
-    color: var(--p-red);
+    color: white;
+    background-color: rgba(4, 50, 140, 0.75);
 }
 /* projects style ends */
 
 /* why me style starts */
 
 .why-p {
-    font-size: 2vw;
-    padding: 10px 40px;
+    font-size: 40px;
+    padding: 0 40px 40px 40px;
+    border-left: 5px solid var(--p-red);
 }
 
 /* why me style ends */
@@ -189,6 +208,13 @@ header nav ul li a:hover {
     flex: 1;
 }
 
+.connect-links {
+    display: flex;
+    border-left: 5px solid var(--p-red);
+    flex: 1 0 70%;
+    justify-content: space-between;
+}
+
 .connectors h3 {
     font-size: 2vw;
     color: var(--p-red);
@@ -196,3 +222,187 @@ header nav ul li a:hover {
     vertical-align: center;
     padding: 40px;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 5vw;
+    }
+
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero sub h2 {
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro {
+        margin-bottom: 10px;
+    }
+
+    .intro img {
+        max-width: 100%;
+    }
+
+    .my-projects {
+        margin-top: 0;
+    }
+
+    .my-projects h2, .why-me h2, .connectors h2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+      header h1 {
+          width: 100%;
+          text-align: center;
+      }
+      
+      header nav {
+          width: 100%;
+          justify-content: space-between;
+      }
+
+      header nav ul {
+          width: 100%;
+          flex: 1;
+          justify-content: space-between;
+          margin-top: 20px;
+      }
+
+      header nav ul li {
+          justify-content: space-between;
+      }  
+      
+      header nav ul li a {
+          font-size: 20px;
+      }
+
+      .hero {
+          justify-content: center;
+      }
+
+      .hero .sub h2 {
+          font-size: 40px;
+          text-align: center;
+      }
+
+      .intro {
+          margin: 10px 0;
+          padding: 10px 10px;
+          justify-content: center;
+          max-height: 100%;
+      }
+
+      .intro article div img {
+          max-width: 60%;
+      }
+
+      .intro p {
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 20px;
+      }
+    
+      .why-me p {
+          font-size: 20px;
+      }
+
+      .title {
+          width: 100%;
+          border-bottom: 5px solid var(--p-red);
+      }
+
+      .project-imgs > div {
+          padding: 10px;
+      }
+
+      .project-imgs, .why-p, .connect-links {
+          border: none;
+          padding-top: 10px;
+      }
+
+      .flex-row {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 10vw;
+    }
+
+    header h1 {
+        font-size: 10vw;
+    }
+    
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro article div img {
+        max-width: 100%;
+    }
+
+    .intro p {
+        font-size: 7vw;
+        margin: 10px;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .project-imgs {
+        flex-direction: column;
+        max-width: 0 1 100%;
+    }
+
+    .primary h3, .secondary h3 {
+        font-size: 5vw;
+    }
+
+    .title h2 {
+        font-size: 10vw;
+    }
+
+    .why-me p {
+        font-size: 7vw;
+    }
+
+    .connect-links {
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .connect-links h3 {
+        font-size: 6vw;
+    }
+  }
