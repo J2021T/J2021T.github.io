@@ -7,4 +7,7 @@
 - Last is a section with links to my linkedin, email, and github profile.
 
 ## Deployed Page Screenshot
-![Alt text](.assets/images/readme-screenshot.png)
+![Alt text](assets/images/readme-screenshot.png "Deployed Screenshot")
+
+## Link to Deployed Application
+https://j2021t.github.io/
