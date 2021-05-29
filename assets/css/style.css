@@ -1,7 +1,7 @@
 :root {
     /* colors */
     --p-red: #C60C30;
-    --p-blue: #04328c;
+    --p-blue: navy;
 }
 
 * {
@@ -19,6 +19,7 @@ body {
 /* header style starts */
 
 header {
+    color: white;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,6 @@ header {
 }
 
 header h1 {
-    color: var(--p-red);
     font-size: 75px;
     font-weight: bold;
     font-family: Calibri;
@@ -52,12 +52,11 @@ header nav ul li a {
     padding: 10px 20px;
     font-size: 1.3vw;
     font-style: oblique;
-    color: var(--p-red);
     font-weight: bold;
 }
 
 header nav ul li a:hover {
-    background-color: var(--p-blue);
+    background-color: white;
 }
 
 /* hero style starts */
@@ -76,7 +75,7 @@ header nav ul li a:hover {
   }
 
 .hero .sub h2 {
-    color: var(--p-red);
+    color: white;
     font-weight: bold;
     font-size: 75px;
     text-align: right;
